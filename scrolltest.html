@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./jquery.onepage-scroll.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		body {
+		position: relative;
+		margin: 0;
+	}
+	section{
+
+		padding: 5vmin 5vmin 5vmin 5vmin;
+		height: 100vh;
+	}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+</script>
+	<div class="main">
+		<section>hello</section>
+		<section>hello2</section>
+	</div>
+</body>
+</html>

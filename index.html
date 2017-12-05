@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Bootstrap Example</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./jquery.onepage-scroll.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        loop: true,
+           beforeMove: function (index) {
+           	clearInterval(timerId);
+			clearInterval(timerId2);
+
+	timerId = setInterval(() =>(transitionToBlack(index)), 20);
+           }
+       });
+  
+ });
+	var possible = "█▓▒░▋▊▉▇▆▅▄▃▂▁▟▞▝▜▛▚▙▘▗▖▕▔▐▏▎▍▌▀";
+	var x =  possible.length;
+	var timerId2;
+	var timerId;
+	function transitionToBlack(index) {
+		var text = "";
+		var page;
+		if (index==1){
+			page="about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me";
+		}
+		if(index==2){
+			page="the portfolio the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio  the portfolio";
+		}
+		if(index==3){
+			page="find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me";
+		}
+		if (index==4) {
+			page="something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else"
+		}
+		if(x>0){
+			x=x-1;
+		}
+
+		for (var i = 0; i < 200; i++){
+			text += possible.charAt(Math.floor(Math.random() * x));
+			for(var j = Math.floor(Math.random() * x); j>0; j--){
+				text+='\u2060';
+				text+=" ";
+			} 
+		}
+		$(".topGlitch").text(text);
+		$(".rightGlitch").text(text);
+		$(".bottomGlitch").text(text);
+		$(".leftGlitch").text(text);
+
+		if(x==0){
+			text=page;
+		$(".topSidebar").text(text);
+		$(".rightSidebar").text(text);
+		$(".bottomSidebar").text(text);
+		$(".leftSidebar").text(text);
+			clearInterval(timerId);
+			timerId2 = setInterval(() =>(transitionToClear()), 20);
+		}
+	}
+	function transitionToClear() {
+		var text = "";
+		if(x==possible.length){
+			$(".topGlitch").text(text);
+			$(".rightGlitch").text(text);
+			$(".bottomGlitch").text(text);
+			$(".leftGlitch").text(text);
+			clearInterval(timerId2);
+			return;
+		}
+		if(x<possible.length){
+			x=x+1;
+		}
+
+		for (var i = 0; i < 200; i++){
+			text += possible.charAt(Math.floor(Math.random() * x));
+			for(var j = Math.floor(Math.random() * x); j>0; j--){
+				text+='\u2060';
+				text+=" ";
+			} 
+		}
+		$(".topGlitch").text(text);
+		$(".rightGlitch").text(text);
+		$(".bottomGlitch").text(text);
+		$(".leftGlitch").text(text);
+	}
+
+	$(document).click(function(e) { 
+    // Check for left button
+    if (e.button == 0) {
+    			
+    }
+});
+
+</script>
+</head>
+<body>
+	<div id="square1"></div>
+	<div id="square2"></div>
+	<div id="square3"></div>
+	<div id="square4"></div>
+
+	<div class="sidebars">
+		<div class="topSidebar">about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me</div>
+		<div class="topSidebar topGlitch"></div>
+		<div class="rightSidebar">about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me</div>
+		<div class="rightSidebar rightGlitch"></div>
+		<div class="leftSidebar">about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me</div>
+		<div class="leftSidebar leftGlitch"></div>
+		<div class="bottomSidebar">about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me</div>
+		<div class="bottomSidebar bottomGlitch"></div>
+
+	</div>
+	<div class="main">
+		<section class="container-fluid section" style="background-color:#2196F3;color:#fff;">
+			<h1>Scrollspy & Affix Example</h1>
+			<h3>Fixed vertical sidenav on scroll</h3>
+			<p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+			<p>The left menu sticks the page after you have scrolled a specified amount of pixels, and the links in the menu are automatically updated based on scroll position.</p>
+		</section>
+		<section class="container-fluid section" id="section2">
+
+		</section>
+		<section class="container-fluid section" id="section3">
+
+		</section>
+		<section class="container-fluid section" id="section4">
+
+		</section>
+		</body>
+		</html>
