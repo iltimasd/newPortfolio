@@ -4,7 +4,7 @@
 	}
 	.container-fluid{
 
-		padding: 5vmin 5vmin 5vmin 5vmin;
+		padding: 5vmin 6vmin 5vmin 6vmin;
 		height: 100vh;
 	}
 	.container{
@@ -24,11 +24,11 @@
 		white-space: nowrap;
 	}
 	.sidebars .topSidebar{
-		top:0;
+		top:-.8vmin;
 		left: 4vmin;
 	}
 	.sidebars .bottomSidebar{
-		bottom:0;
+		bottom:-.8vmin;
 		left: 4vmin;
 	}
 	.sidebars .leftSidebar{
@@ -88,3 +88,20 @@
 	#section3 {color: #fff; background-color: #ff9800;}
 	#section41 {color: #fff; background-color: #00bcd4;}
 	#section42 {color: #fff; background-color: #009688;}
+
+
+
+	h1{
+		font-family: 'PT Mono', monospace;
+		font-size: 10vmin;
+	}
+
+	img{
+		max-height: 90vh;
+	}
+
+	.contact-img{
+
+		max-width: 50vw;
+		max-height: 30vh;
+	}
