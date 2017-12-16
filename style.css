@@ -4,7 +4,7 @@
 	}
 	.container-fluid{
 
-		padding: 5vmin 6vmin 5vmin 6vmin;
+		padding: 5vmin 10vmin 5vmin 6vmin;
 		height: 100vh;
 	}
 	.container{
@@ -100,8 +100,73 @@
 		max-height: 90vh;
 	}
 
+	.img-container{
+		margin-top: 30vh;
+	}
+	
+	@media screen and (max-width: 991px) {
+    	.img-container{
+			margin-top: 15vh;
+			}
+	}
+
+	@media screen and (max-width: 768px) {
+    		.button,.vis-panel,.vis-item-content{
+		font-family: 'PT Mono', monospace;
+		font-weight:400;
+		font-size: 12px;
+	}
+
+	}
+
 	.contact-img{
 
 		max-width: 50vw;
 		max-height: 30vh;
 	}
+
+	.button,.vis-panel,.vis-item-content{
+		font-family: 'PT Mono', monospace;
+		font-weight:400;
+		font-size: 16px;
+	}
+
+	input[type=text] {
+		font-family: 'PT Mono', monospace;
+		text-align: center;
+	font-size: 4vmin;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 6vmin 0 3vmin 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+input[type=button] {
+	font-family: 'VT323', monospace;
+
+	margin: auto auto auto 25%;;
+	width: 50%;
+		font-size: 3vmin;
+	border-color: #4CAF50;
+    background-color: #fff;
+    border: dotted;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+        border-radius: 5px;
+
+}
+
+input[type=button]:hover{
+	border: dashed;
+
+}
+
+input[type=button]:active{
+	border: solid;
+
+}
+
+

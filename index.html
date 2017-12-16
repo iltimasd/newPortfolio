@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
 
-	<title>Bootstrap Example</title>
+	<title>iltimas doha</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./jquery.onepage-scroll.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|PT+Mono" rel="stylesheet">
-
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./style.css">
-
-
-
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".main").onepage_scroll({
@@ -28,11 +28,9 @@
 				beforeMove: function (index) {
 					clearInterval(timerId);
 					clearInterval(timerId2);
-
 					timerId = setInterval(() =>(transitionToBlack(index)), 20);
 				}
 			});
-
 		});
 		var possible = "█▓▒▇▆▅▄▖▕▔▐▏▎▍▌▀";
 		var x =  possible.length;
@@ -51,7 +49,7 @@
 				page="find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me find me";
 			}
 			if (index==4) {
-				page="something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else something else"
+				page="temporary exhibition temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition  temporary exhibition "
 			}
 			if(x>0){
 				x=x-1;
@@ -105,22 +103,13 @@
 			$(".bottomGlitch").text(text);
 			$(".leftGlitch").text(text);
 		}
-
-		$(document).click(function(e) { 
-    // Check for left button
-    if (e.button == 0) {
-
-    }
-});
-
-</script>
+	</script>
 </head>
 <body>
 	<div id="square1"></div>
 	<div id="square2"></div>
 	<div id="square3"></div>
 	<div id="square4"></div>
-
 	<div class="sidebars">
 		<div class="topSidebar">about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me</div>
 		<div class="topSidebar topGlitch"></div>
@@ -130,60 +119,115 @@
 		<div class="leftSidebar leftGlitch"></div>
 		<div class="bottomSidebar">about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me about me</div>
 		<div class="bottomSidebar bottomGlitch"></div>
-
 	</div>
 	<div class="main">
 		<section class="container-fluid section" style="background-color:#2196F3;color:#fff;">
-			<div style="width:75%"><h1 class="title">Iltimas Doha is an <br> interaction designer and student at<br> Parsons & Cornell. </h1></div>
+			<div style="width:75%">
+				<h1 class="title">Iltimas Doha is an <br> interaction designer and student at<br> Parsons & Cornell.</h1>
+			</div>
 			<!-- <img class="img-responsive" src="https://raw.githubusercontent.com/iltimasd/portfolio/master/img/profile.png" alt=""> -->
 		</section>
 		<section class="container-fluid section" id="section2">
 			<div style="padding: 10px;">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" >
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
+				<!-- <div class="col-md-6">
+					<h2>DYNAMIC TEXT OH Ykjdfkjsjfk sksjfsdfsfljslfkjslfjslfkjslfjlfjslfjslfjfslfjsd lkjfljEH</h2>
+				</div> -->
+				<div class="col-md-6">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" >
-						<div class="item active">
-							<img src="https://raw.github.com/iltimasd/portfolio/master/img/portfolio/group.jpg" alt="Los Angeles">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" >
+							<div class="item active">
+								<img src="https://raw.github.com/iltimasd/portfolio/master/img/portfolio/group.jpg" alt="Los Angeles">
+							</div>
+
+							<div class="item">
+								<img src="https://raw.github.com/iltimasd/portfolio/master/img/portfolio/thatsmate.png" alt="Chicago">
+							</div>
+
+							<div class="item">
+								<img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York">
+							</div>
 						</div>
 
-						<div class="item">
-							<img src="https://raw.github.com/iltimasd/portfolio/master/img/portfolio/thatsmate.png" alt="Chicago">
-						</div>
-
-						<div class="item">
-							<img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York">
-						</div>
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					</a>
 				</div>
 			</div>
 		</section>
 		<section class="container-fluid section" id="section3">
-			<div class="row" style="margin-top: 30vh;margin-bottom: 30vh;">
-			<div class="col-md-6">
-			<a href="https://twitter.com/iltimasdoha"><img class="contact-img" src="http://bestanimations.com/Animals/Birds/bird-animated-gif-26.gif" style="display:block;margin:auto;"></a></div>
-			<div class="col-md-6">
-			<a href="https://github.com/iltimasd"><img class="contact-img" src="http://bestanimations.com/Animals/Fish/animated-octopus-gif.gif" style="display:block;margin:auto;"></a></div>
+			<div class="img-container">
+				<div class="col-md-6">
+					<a href="https://twitter.com/iltimasdoha">
+						<img class="contact-img" src="http://bestanimations.com/Animals/Birds/bird-animated-gif-26.gif" style="display:block;margin:auto;">
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="https://github.com/iltimasd"><img class="contact-img" src="http://bestanimations.com/Animals/Fish/animated-octopus-gif.gif" style="display:block;margin:auto;"></a>
+				</div>
 			</div>
 		</section>
 		<section class="container-fluid section" id="section4">
+			<input type="text" id="data" placeholder="Where should I work next?"></input>
+			<input type="button" id="load" value="WORK HERE! ↓" >
+			<div id="visualization" style="margin-top: 5vh; ">
+			</div>
+			<script type="text/javascript">
+			  // DOM element where the Timeline will be attached
+			  var container = document.getElementById('visualization');
 
-		</section>
-	</body>
-	</html>
+			  // Create a DataSet (allows two way data-binding)
+			  var today = new Date();
+			  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+			  var items = new vis.DataSet([
+			  	{id: 1, content: 'EYEBEAM Resident', start: '2014-02-01', end:'2015-08-30', type:'range'},
+			  	{id: 2, content: 'Consultant <br>for NYCDOE', start: '2016-07-15',type:""},
+			  	{id: 3, content: 'Consultant <br>for NYCDOE', start: '2017-07-15', type:""},
+			  	{id: 4, content: 'Parsons Deisgn+Tech BFA', start: '2015-09-01', end: '2019-05-30'}
+			  	]);
+
+			  // Configuration for the Timeline
+			  var options = {
+			  	height: '50vh',
+			  	start: new Date(2013, 12, 21),
+			  	end: new Date(2018, 9, 30),
+			  	min: new Date(2012,12,10),
+			  	max: new Date(2020,03,20)
+			  };
+
+			  // Create a Timeline
+			  var timeline = new vis.Timeline(container, items, options);
+
+			  var txtData = document.getElementById('data');
+			  var btnLoad = document.getElementById('load');
+			  function loadData () {
+			  	var temp="[{\"id\":"+Math.round(Math.random() * 100)+",\"content\":\""+txtData.value+"\",\"start\":\"2018-05-30\"}]"
+			  	var data = JSON.parse(temp);
+			  	if(txtData.value != ""){ 
+
+			  		items.add(data);
+
+			    // adjust the timeline window such that we see the loaded data
+			    timeline.fit();
+			}
+		}
+		btnLoad.onclick = loadData;
+	</script>
+</section>
+</body>
+</html>
