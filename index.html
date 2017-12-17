@@ -24,7 +24,7 @@
 		$(document).ready(function(){
 			$(".main").onepage_scroll({
 				sectionContainer: "section",
-				loop: true,
+				loop: false,
 				beforeMove: function (index) {
 					clearInterval(timerId);
 					clearInterval(timerId2);
@@ -195,7 +195,7 @@
 			  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
 			  var items = new vis.DataSet([
-			  	{id: 1, content: 'EYEBEAM Resident', start: '2014-02-01', end:'2015-08-30', type:'range'},
+			  	{id: 1, content: 'EYEBEAM <br>Resident', start: '2014-02-01', end:'2015-08-30', type:'range'},
 			  	{id: 2, content: 'Consultant <br>for NYCDOE', start: '2016-07-15',type:""},
 			  	{id: 3, content: 'Consultant <br>for NYCDOE', start: '2017-07-15', type:""},
 			  	{id: 4, content: 'Parsons Deisgn+Tech BFA', start: '2015-09-01', end: '2019-05-30'}
