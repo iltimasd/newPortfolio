@@ -129,8 +129,9 @@
 		</section>
 		<section class="container-fluid section" id="section2">
 			<div style="padding: 10px;">
-				<div class="col-md-3">
-				<div class="selection btn-group-vertical hidden-xs hidden-sm">
+			<div class="row">
+				<div class="col-sm-3">
+				<div class="selection btn-group-vertical hidden-xs ">
 					<input class="portBtn" type="radio" name="options" id="Dispatch">
 					<label class="btn btn-primary" for="Dispatch">
 						Dispatch
@@ -166,7 +167,7 @@
 						Conflict
 					</label>
 				</div>
-				<div class="selection btn-group hidden-md hidden-lg">
+				<div class="selection btn-group hidden-sm hidden-md hidden-lg">
 					<input class="portBtn" type="radio" name="options" id="Dispatch">
 					<label class="btn btn-primary" for="Dispatch">
 						Dispatch
@@ -206,10 +207,11 @@
 				<h2>Wearable device to give user sense of North</h2><br><h3><a href="#" class="external">Read More ↪</a></h3>
 				</div>
 			</div>
-				<div id="portfolioContainter" class="col-md-9">
+				<div id="portfolioContainter" class="col-sm-9">
 					<img id="portfolio" class="img-responsive" src="./img/north.jpg">
 				</div>
 			</div>
+		</div>
 			<script type="text/javascript">
 				$(".portBtn").click(function(){
 					if(event.target.id=="Dirty"){$("#portfolioContainter").html($("#synthImg").html());}
@@ -250,7 +252,8 @@
 			  	{id: 1, content: 'EYEBEAM <br>Resident', start: '2014-02-01', end:'2015-08-30', type:'range'},
 			  	{id: 2, content: 'Consultant <br>for NYCDOE', start: '2016-07-15',type:""},
 			  	{id: 3, content: 'Consultant <br>for NYCDOE', start: '2017-07-15', type:""},
-			  	{id: 4, content: 'Parsons Deisgn+Tech BFA', start: '2015-09-01', end: '2019-05-30'}
+			  	{id: 4, content: 'Parsons Design+Tech BFA', start: '2015-09-01', end: '2019-05-30'},
+			  	{id: 5, content: 'Cornell-Tech ', start: '2017-09-01', end: '2018-05-30'}
 			  	]);
 
 			  // Configuration for the Timeline
