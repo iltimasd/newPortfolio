@@ -2,6 +2,7 @@ body {
 	position: relative;
 	margin: 0;
 }
+
 .container-fluid{
 
 	padding: 5vmin 10vmin 5vmin 6vmin;
@@ -195,6 +196,9 @@ input[type=button] {
 	border-radius: 5px;
 
 }
+input[type=button].zoom {
+margin:15px;
+}
 
 input[type=button]:hover{
 	border: dashed;
@@ -246,3 +250,11 @@ a.external:hover{
     transform: translateY(-15px);
   }
 }
+
+.menu{
+
+	position: absolute;
+
+    z-index: 9999;
+}
+

@@ -127,7 +127,7 @@
 			</div>
 			<!-- <img class="img-responsive" src="https://raw.githubusercontent.com/iltimasd/portfolio/master/img/profile.png" alt=""> -->
 			<div class="arrow bounce">
-  <h1 class="fa fa-arrow-down fa-2x" href="#">&#11163;</h1>
+  <h1 class="fa fa-arrow-down fa-2x" href="#">&#10225;</h1>
 </div>
 		</section>
 		<section class="container-fluid section" id="section2">
@@ -297,7 +297,11 @@
 		<section class="container-fluid section" id="section4">
 			<input type="text" id="data" placeholder="Where should I work next?"></input>
 			<input type="button" id="load" value="SUBMIT! ↓" >
-			<div id="visualization" style="margin-top: 5vh; ">
+			<div id="visualization" style="margin-top: 5vh;">
+				<div class="menu">
+        <input type="button" class="zoom" id="zoomIn" value="Zoom in">
+        <input type="button" class="zoom" id="zoomOut" value="Zoom out">
+    </div>
 			</div>
 			<script type="text/javascript">
 			  // DOM element where the Timeline will be attached
@@ -318,6 +322,7 @@
 			  // Configuration for the Timeline
 			  var options = {
 			  	height: '70vh',
+			  	zoomable: false,
 			  	start: new Date(2013, 12, 21),
 			  	end: new Date(2018, 9, 30),
 			  	min: new Date(2012,12,10),
@@ -341,6 +346,11 @@
 			}
 		}
 		btnLoad.onclick = loadData;
+		 // attach events to the navigation buttons
+    document.getElementById('zoomIn').onclick    = function () { timeline.zoomIn( 0.5); };
+    document.getElementById('zoomOut').onclick   = function () { timeline.zoomOut( 0.5); };
+   
+
 	</script>
 </section>
 <div style="visibility: hidden;">
